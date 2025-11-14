@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #0099cc, #003366);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.aquarium {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- Thợ lặn --- */
+.diver1 {
+  position: absolute;
+  width: 100px;
+  top: 50px;
+  right: 180px;
+  animation: swimDiver1 6s linear infinite reverse;
+}
+@keyframes swimDiver1 {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(-110vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(-110vw) scaleX(-1); /* quay đầu */
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+
+.diver2 {
+  position: absolute;
+  width: 100px;
+  top: 200px;
+  right: 220px;
+  animation: swimDiver2 6s linear infinite reverse;
+}
+@keyframes swimDiver2 {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(-110vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(-110vw) scaleX(-1); /* quay đầu */
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+.diver3 {
+  position: absolute;
+  width: 100px;
+  top: 150px;
+  right: 200px;
+  animation: swimDiver3 6s linear infinite reverse;
+}
+@keyframes swimDiver3 {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(-110vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(-110vw) scaleX(-1); /* quay đầu */
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+.turtle {
+  position: absolute;
+  width: 100px;
+  top: 100px;
+  right: 160px;
+  animation: turtle 6s linear infinite reverse;
+}
+@keyframes turtle {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(-110vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(-110vw) scaleX(-1); /* quay đầu */
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+/* --- Cá mập --- */
+.shark {
+  position: absolute;
+  width: 250px;
+  top: 200px;
+  right: -100px;
+  animation: swimShark 6s linear infinite reverse;
+}
+
+@keyframes swimShark {
+  0% {
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    transform: translateX(-110vw) scaleX(1);
+  }
+  51% {
+    transform: translateX(-110vw) scaleX(-1); /* quay đầu */
+  }
+  100% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+
+/* --- Bong bóng --- */
+.bubble {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: rise 6s linear infinite;
+}
+
+.b1 {
+  left: 20%;
+  animation-delay: 0s;
+}
+.b2 {
+  left: 50%;
+  animation-delay: 2s;
+}
+.b3 {
+  left: 80%;
+  animation-delay: 4s;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.5);
+    opacity: 0;
+  }
+}
